@@ -28,7 +28,7 @@ function ruby_prompt {
 function git_stash_count {
     result=`git stash list 2>/dev/null | wc -l | tr -d ' '`
     if [ "$result" != 0 ] ; then
-  echo " stash:$result"
+      echo " stash:$result"
     fi
 }
 
